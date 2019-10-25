@@ -1,19 +1,16 @@
 {
   "manifest_version": 2,
-  "name": "Google Chrome Extension Starter",
+  "name": "Librusowa API",
   "version": "1.0",
-  "description": "Hello",
+  "description": "Dodatek do Librusu",
   "icons": {
     "128": "icon.png"
   },
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
+      "matches": ["https://synergia.librus.pl/przegladaj_nb/uczen"],
+      "run_at": "document_start",
       "js": ["index.js"]
     }
-  ],
-  "browser_action": {
-    "default_popup": "index.html",
-    "default_title": "Extension"
-  }
+  ]
 }
