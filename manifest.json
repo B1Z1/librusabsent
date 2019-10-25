@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Google Chrome Extension Starter",
+  "version": "1.0",
+  "description": "Hello",
+  "icons": {
+    "128": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["index.js"]
+    }
+  ],
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_title": "Extension"
+  }
+}
